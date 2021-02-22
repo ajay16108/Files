@@ -3,7 +3,7 @@ int main()
 {
    int ch;
    FILE *fpw;
-   fpw = fopen("newfile5.txt","w");
+   fpw = fopen("newfile6.txt","wb");
 
    if(fpw == NULL)
    {
@@ -13,7 +13,7 @@ int main()
 
    printf("Enter any character: ");
    scanf("%d",&ch);
-   fputc(ch,fpw);
+   fwrite(ch,fpw);
    /* You can also use fputc(ch, fpw);*/
    fprintf(fpw,"%d",ch);
    fclose(fpw);
