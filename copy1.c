@@ -13,9 +13,9 @@ int main()
 
    printf("Enter any character: ");
    scanf("%d",&ch);
-
+   fputc(ch,fpw);
    /* You can also use fputc(ch, fpw);*/
-   fprintf(fpw,"%d",ch);
+   //fprintf(fpw,"%d",ch);
    fclose(fpw);
 
    return 0;
