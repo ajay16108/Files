@@ -3,7 +3,7 @@ int main()
 {
    int ch;
    FILE *fpw;
-   fpw = fopen("newfile4.txt","w");
+   fpw = fopen("newfile5.txt","w");
 
    if(fpw == NULL)
    {
