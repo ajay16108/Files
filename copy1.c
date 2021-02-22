@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main()
 {
-   char ch;
+   int ch;
    FILE *fpw;
-   fpw = fopen("newfile.txt","w");
+   fpw = fopen("newfile1.txt","w");
 
    if(fpw == NULL)
    {
@@ -12,10 +12,10 @@ int main()
    }
 
    printf("Enter any character: ");
-   scanf("%c",&ch);
+   scanf("%d",&ch);
 
    /* You can also use fputc(ch, fpw);*/
-   fprintf(fpw,"%c",ch);
+   fprintf(fpw,"%d",ch);
    fclose(fpw);
 
    return 0;
