@@ -3,9 +3,9 @@ int main()
 {
  char a;
  printf("Enter the value");
- scanf("%d",&a);
+ scanf("%c",&a);
  FILE *fp;
- fp=fopen("ajay4.txt","w+");
- fputs(a,fp);
+ fp=fopen("ajay5.txt","w+");
+ fputc(a,fp);
 }
  
