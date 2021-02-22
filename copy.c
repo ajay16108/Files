@@ -6,5 +6,6 @@ int main()
  scanf("%d",&a);
  FILE *fp;
  fp=fopen("ajay4.txt","w+");
- f=
+ fputc(a,fp);
+}
  
