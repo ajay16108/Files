@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main()
 {
+  int ch;
 
   FILE *fp,*fp2;
   fp=fopen("readfile.c","r");
