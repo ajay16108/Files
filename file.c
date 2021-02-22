@@ -1,10 +1,17 @@
 #include <stdio.h>
 
 main() {
+   int ch;
    FILE *fp;
 
-   fp = fopen("test3.txt", "w+");
-   fprintf(fp, "This is testing for fprintf...\n");
-   fputs("This is testing for fputs...\n", fp);
+   fp = fopen("readfile.c", "r");
+   if(fp==NULL)
+      printf("File note present");
+   else
+      printf("File is opend");
+   while((ch=fgetc(fp))!=EOF)
+   {
+      printf("%c",ch);
+   }
    fclose(fp);
 }
