@@ -3,6 +3,7 @@
 #include<unistd.h>
 int main()
 {
+  printf("hai to all");
   int pid;
   pid=fork();
   if(pid==0)
