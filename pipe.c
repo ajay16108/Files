@@ -7,7 +7,7 @@ char* msg3 = "hello, world #3";
 int main() 
 { 
     int a=10,b=20,c=30;
-    char inbuf[20]; 
+    char inbuf[40]; 
     int p[2], i; 
   
     if (pipe(p) < 0) 
@@ -25,7 +25,7 @@ int main()
   
     for (i = 0; i < 6; i++) { 
         /* read pipe */
-        read(p[0], inbuf, 20); 
+        read(p[0], inbuf, 40); 
         printf("% s\n", inbuf); 
     } 
     return 0; 
