@@ -9,22 +9,20 @@ int main()
 { 
   
     char inbuf[16]; 
-    int p[5], i; 
+    int p[2], i; 
   
     if (pipe(p) < 0) 
         exit(1); 
   
     /* continued */
-    /* write pipe 
+    /* write pipe */
   
     write(p[1], msg1, 16); 
     write(p[1], msg2, 16); 
     write(p[1], msg3, 16);
-    write(p[1], a, 16);
-    write(p[1], b, 16);
-    write(p[1], c, 16);*/
+    
   
-    for (i = 0; i < 6; i++) { 
+    for (i = 0; i < 3; i++) { 
         /* read pipe */
         read(p[0], inbuf, 16); 
         printf("% s\n", inbuf); 
