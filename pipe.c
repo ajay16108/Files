@@ -15,14 +15,14 @@ int main()
         exit(1); 
   
     /* continued */
-    /* write pipe */
+    /* write pipe 
   
     write(p[1], msg1, 16); 
     write(p[1], msg2, 16); 
     write(p[1], msg3, 16);
     write(p[1], a, 16);
     write(p[1], b, 16);
-    write(p[1], c, 16);
+    write(p[1], c, 16);*/
   
     for (i = 0; i < 6; i++) { 
         /* read pipe */
