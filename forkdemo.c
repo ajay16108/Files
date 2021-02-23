@@ -5,7 +5,7 @@ int main()
 {
   int pid;
   pid=fork();
-  if(pid==o)
+  if(pid==0)
   {
   printf("In chaild);
   }
