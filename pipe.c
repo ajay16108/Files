@@ -6,7 +6,8 @@ char* msg3 = "hello, world #3";
   
 int main() 
 { 
-    char inbuf[3]; 
+    int a=10,b=20,c=30;
+    char inbuf[20]; 
     int p[2], i; 
   
     if (pipe(p) < 0) 
@@ -17,9 +18,12 @@ int main()
   
     write(p[1], msg1, 20); 
     write(p[1], msg2, 20); 
-    write(p[1], msg3, 20); 
+    write(p[1], msg3, 20);
+    write(p[1], a, sizeof(int));
+    write(p[1], b, sizeof(int));
+    write(p[1], c, sizeof(int));
   
-    for (i = 0; i < 3; i++) { 
+    for (i = 0; i < 6; i++) { 
         /* read pipe */
         read(p[0], inbuf, 20); 
         printf("% s\n", inbuf); 
