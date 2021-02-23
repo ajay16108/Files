@@ -3,10 +3,10 @@
 #include<unistd.h>
 int main()
 {
-  int pid=0;
+  int pid;
   pid=fork();
   if(pid==o)
   printf("In chaild);
   else
-  printf("hello world");
+  printf("In parent");
  }
