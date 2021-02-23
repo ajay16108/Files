@@ -26,7 +26,7 @@ int main()
   
     for (i = 0; i < 6; i++) { 
         /* read pipe */
-        read(p[0], inbuf, 16; 
+        read(p[0], inbuf, 16); 
         printf("% s\n", inbuf); 
     } 
     return 0; 
