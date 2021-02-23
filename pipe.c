@@ -1,8 +1,8 @@
 #include <stdio.h> 
 #include <unistd.h>  
-char  msg1 = "hello, world #1"; 
-char msg2 = "hello, world #2"; 
-char msg3 = "hello, world #3"; 
+char*  msg1 = "hello, world #1"; 
+char* msg2 = "hello, world #2"; 
+char* msg3 = "hello, world #3"; 
   
 int main() 
 { 
