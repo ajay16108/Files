@@ -9,7 +9,7 @@ int main()
 { 
   
     char inbuf[16]; 
-    int p[2], i; 
+    int p[5], i; 
   
     if (pipe(p) < 0) 
         exit(1); 
