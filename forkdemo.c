@@ -6,7 +6,11 @@ int main()
   int pid;
   pid=fork();
   if(pid==o)
+  {
   printf("In chaild);
+  }
   else
+  {
   printf("In parent");
+  }
  }
