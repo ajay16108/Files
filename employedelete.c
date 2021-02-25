@@ -16,10 +16,13 @@ int main()
     rewind(fp);
     while((fread(&obj2[i],sizeof(obj2),1,fp) ==1))
     {
-        if (obj2.empID!= id)
+        for(i=0;i<3;i++)
         {
-            fwrite(&obj2, sizeof(obj2), 1, fp1);
-        } 
+            if (obj2[i].empID!= id)
+            {
+                fwrite(&obj2[i], sizeof(obj2), 1, fp1);
+            } 
+        }
     }
     fclose(fp);
     fclose(fp1);
