@@ -21,14 +21,17 @@ int main()
        {
            flag=1;
            index=i;
+       }
+    }
+     
+ }
+ if(flag==1)
+ {
            obj2[index].empID=NULL;
            obj2[index].empname="";
            obj2[index].company="";
            
         fwrite(&obj2[index],sizeof(obj2),1,fp);
-       }
-    }
- }
   
    fclose(fp);
 }
