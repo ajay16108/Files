@@ -14,11 +14,11 @@ int main()
     printf("enter employee id to search");
     scanf("%d",&id);
     rewind(fp);
-    while((fread(&obj2[i],sizeof(obj2),1,fp) ==1))
+    while((fread(&obj1[i],sizeof(obj1),1,fp) ==1))
     {
-        if (obj1.empiID != id)
+        if (obj1.empID != id)
         {
-            fwrite(&obj1, sizeof(data), 1, fp1);
+            fwrite(&obj1, sizeof(obj1), 1, fp1);
         } 
     }
     fclose(fp);
