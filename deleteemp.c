@@ -21,8 +21,9 @@ int main()
        {
            flag=1;
            index=i;
+           obj2[index]=NULL;
            
-        fwrite(&obj2[index].empID=NULL,&obj2[index].empname=NULL,&obj2[index].company=NULL);
+        fwrite(&obj2[index],sizeof(obj2),1,fp);
        }
     }
  }
