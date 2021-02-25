@@ -13,7 +13,6 @@ int main()
     fp1=fopen("employee","wb");
     printf("enter employee id to search");
     scanf("%d",&id);
-    rewind(fp);
     while((fread(&obj2[i],sizeof(obj2),1,fp) ==1))
     {
         for(i=0;i<3;i++)
