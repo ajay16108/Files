@@ -30,9 +30,9 @@ int main()
         printf("%s %s",obj2[index].empname,obj2[index].company);
     }
  if(flag==0)
- {
+    {
      printf("not found");
- }
+    }
    fclose(fp);
 }
 
