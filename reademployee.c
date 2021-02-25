@@ -9,13 +9,14 @@ struct employee
 struct employee obj2[10];
 int main()
 {
+    int i;
     FILE *fp;
     fp=fopen("employeedb","rb");
-    for(int i=0;i<3;i++)
+    for(i=0;i<3;i++)
     {
         fread(&obj2[i],sizeof(obj2),1,fp);
     }
-    for(int i=0;i<3;i++)
+    for(i=0;i<3;i++)
     {
         printf("%d %s %s",obj2[i].empID,obj2[i].empname,obj2[i].company);
     }
