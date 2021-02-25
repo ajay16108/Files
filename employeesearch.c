@@ -7,7 +7,7 @@ struct employee
 }obj1[10];
 struct employee obj2[10];
 int main()
-{    int id;int flag;int i;int index;
+{    int id;int flag;int i;int index=0;
     FILE *fp;
     fp=fopen("employeedb","rb");
     printf("enter employee id to search");
