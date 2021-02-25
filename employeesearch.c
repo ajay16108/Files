@@ -14,7 +14,7 @@ int main()
     scanf("%d",&id);
  while((fread(&obj2[i],sizeof(obj2),1,fp) ==1))
  {
-    for(i=1;i<=3;i++)
+    for(i=0;i<=3;i++)
     {
        if(obj2[i].empID==id)
        {
