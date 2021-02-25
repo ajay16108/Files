@@ -15,7 +15,7 @@ int main()
     scanf("%d",&id);
     for(i=0;i<3;i++)
     {
-       if(obj2[i].empID==id)
+       if(obj1[i].empID==id)
        {
            flag=1;
            break;
@@ -24,11 +24,9 @@ int main()
     if(flag==1)
     {
         printf("found");
-        printf("%s %s",obj2[i].empname,obj2[i].company);
+        printf("%s %s",obj1[i].empname,obj1[i].company);
     }
     
-    
-    
-    fclose(fp);
+   fclose(fp);
 }
 
