@@ -20,6 +20,7 @@ int main()
             {
                 printf("Enter the new data ");
                 scanf("%d %s %s", &obj2[i].empID,&obj2[i].empname,&obj2[i].company);
+                fseek(fp,sizeof(obj2[i])*i,SEEK_SET);
                 fwrite(&obj2[i], sizeof(obj2), 1, fp);
             } 
         }
