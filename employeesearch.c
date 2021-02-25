@@ -19,16 +19,19 @@ int main()
        if(obj2[i].empID==id)
        {
            flag=1;
-           index=i;
+           
+           printf("found");
+        printf("%s %s",obj2[i].empname,obj2[i].company);
+          
            break;
        }
     }
  }
-    if(flag==1)
+   /* if(flag==1)
     {
         printf("found");
         printf("%s %s",obj2[index].empname,obj2[index].company);
-    }
+    }*/
  if(flag==0)
     {
      printf("not found");
