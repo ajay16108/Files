@@ -22,8 +22,7 @@ int main()
            flag=1;
            
            printf("found");
-        printf("%s %s",obj2[i].empname,obj2[i].company);
-          
+           printf("%s %s",obj2[i].empname,obj2[i].company);
            break;
        }
     }
