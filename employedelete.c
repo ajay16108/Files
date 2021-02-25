@@ -20,7 +20,7 @@ int main()
             if (obj2[i].empID== id)
             {
                 print("Enter the new data ");
-                scanf("%d %s %s", &obj2[i].empID,&obj2[i].empname,&obj3[i].company);
+                scanf("%d %s %s", &obj2[i].empID,&obj2[i].empname,&obj2[i].company);
                 fwrite(&obj2[i], sizeof(obj2), 1, fp);
             } 
         }
