@@ -9,7 +9,7 @@ struct employee obj2[10];
 int main()
 {    int id;int flag;int i;int index=0;
     FILE *fp;
-    fp=fopen("employeedb","rb");
+    fp=fopen("employeedb","wb");
     printf("enter employee id to search");
     scanf("%d",&id);
  //while((fread(&obj2[i],sizeof(obj2),1,fp) ==1))
